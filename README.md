@@ -77,9 +77,9 @@ The table below shows orders for the number of unique slugs of given length that
 
 | Words | Combinations | Example                              |
 | ----- | ------------ | ------------------------------------ |
-| 4     | 10^{10}      | `lumpy-agouti-of-unknown-enthusiasm` |
-| 3     | 10^8         | `speedy-thistle-starling`            |
-| 2     | 10^5         | `whimsical-dodo`                     |
+| 4     | $10^{10}$    | `lumpy-agouti-of-unknown-enthusiasm` |
+| 3     | $10^8$       | `speedy-thistle-starling`            |
+| 2     | $10^5$       | `whimsical-dodo`                     |
 
 ## For advanced users
 
