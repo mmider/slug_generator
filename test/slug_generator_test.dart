@@ -1,3 +1,6 @@
+import 'dart:math' show Random, pow;
+
+import 'package:slug_generator/slug_generator.dart';
 import 'package:slug_generator/src/data_containers.dart';
 import 'package:test/test.dart';
 
@@ -64,6 +67,16 @@ void main() {
       expect(fetch(5), ['f', 'b']);
       expect(fetch(6), ['f', 'c']);
       expect(fetch(7), ['f', 'd']);
+    });
+
+    test(
+        'sample random slug 10^6 times to see if any unexpected errors are thrown',
+        () {
+      final rng = Random(42);
+      final n = pow(10, 6);
+      for (var i = 0; i < n; i++) {
+        expect(rng.nextSlug().length > 1, true);
+      }
     });
   });
 }
